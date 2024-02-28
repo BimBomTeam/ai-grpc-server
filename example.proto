@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package example;
+
+service ExampleService {
+    rpc SayHello (HelloRequest) returns (HelloResponse);
+}
+
+message HelloRequest {
+    required string name = 1;
+}
+
+message HelloResponse {
+    required string message = 1;
+}
